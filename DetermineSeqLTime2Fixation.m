@@ -65,7 +65,7 @@ for trial = 1:num_trials
 %                 end
                 
                 trialdata = analyze_sequence_trial(fixationstats{trial},sequence_locations{sequence},...
-                    fixwin,per(trial).allval,per(trial).alltim);
+                    fixwin,per(trial).allval,per(trial).alltim,0);
                 
                 fixation_numbers(trial,:) = trialdata.fixationnums;
                 reaction_time(trial,:) = trialdata.t2f;
