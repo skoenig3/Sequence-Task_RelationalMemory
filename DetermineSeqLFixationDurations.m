@@ -10,6 +10,8 @@ load(ListSQdatafile)
 fixwin = 2.5;
 fixation_durations{1} = NaN(96,40);
 fixation_durations{2} = NaN(96,40);
+% pupil_data{1} = NaN(96,1051);
+% pupil_data{2} = NaN(96,1051);
 saccade_amplitudes{1} = NaN(96,40);
 saccade_amplitudes{2} = NaN(96,40);
 
@@ -77,6 +79,8 @@ for t = 1:length(fixationstats);
             fixation_durations{novrow}(img,1:length(fixdurs))=fixdurs;
             saccade_amplitudes{novrow}(img,1:length(sacamps)) = sacamps;
             
+%             rounded_img_on = round(img_on/5);
+%             pupil_data{novrow}(img,:) = pupildata{t}(rounded_img_on-50:rounded_img_on+1000);
         end
     end
 end

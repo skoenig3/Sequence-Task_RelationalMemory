@@ -8,18 +8,18 @@ figure_dir = 'C:\Users\seth.koenig\Documents\MATLAB\Sequence Task_RelationalMemo
 % PW pre-lesion
 % %may or may not want to drop sessions for SeqL13.itm, PW150410.2 got
 % %through 93.6% of all trials with 81.1% of all trials being valid
-% cch25_files = {'PW150324.1','PW150325.1','PW150326.1','PW150327.1','PW150330.1',...
-%                'PW150331.1','PW150401.1','PW150402.1','PW150403.1','PW150406.1',...
-%                'PW150407.1','PW150409.1','PW150413.1','PW150414.1',...
-%                'PW150415.1'};%'PW150410.1'
-% SeqL_files = {'PW150324.2','PW150325.2','PW150326.2','PW150327.2','PW150330.2',...
-%               'PW150331.2','PW150401.2','PW150402.2','PW150403.2','PW150406.2',...
-%               'PW150407.2','PW150409.2','PW150413.2','PW150414.2',...
-%               'PW150415.2'}; %'PW150410.2'
-% item_sets =  {'SeqL01.itm','SeqL02.itm','SeqL03.itm','SeqL04.itm','SeqL05.itm',...
-%               'SeqL06.itm','SeqL07.itm','SeqL08.itm','SeqL09.itm','SeqL10.itm',...
-%               'SeqL11.itm','SeqL12.itm','SeqL14.itm','SeqL15.itm',...
-%               'SeqL16.itm'}; %'SeqL13.itm'
+cch25_files = {'PW150324.1','PW150325.1','PW150326.1','PW150327.1','PW150330.1',...
+               'PW150331.1','PW150401.1','PW150402.1','PW150403.1','PW150406.1',...
+               'PW150407.1','PW150409.1','PW150413.1','PW150414.1',...
+               'PW150415.1'};%'PW150410.1'
+SeqL_files = {'PW150324.2','PW150325.2','PW150326.2','PW150327.2','PW150330.2',...
+              'PW150331.2','PW150401.2','PW150402.2','PW150403.2','PW150406.2',...
+              'PW150407.2','PW150409.2','PW150413.2','PW150414.2',...
+              'PW150415.2'}; %'PW150410.2'
+item_sets =  {'SeqL01.itm','SeqL02.itm','SeqL03.itm','SeqL04.itm','SeqL05.itm',...
+              'SeqL06.itm','SeqL07.itm','SeqL08.itm','SeqL09.itm','SeqL10.itm',...
+              'SeqL11.itm','SeqL12.itm','SeqL14.itm','SeqL15.itm',...
+              'SeqL16.itm'}; %'SeqL13.itm'
 
 % PW post-lesion
 % cch25_files = {'PW160125.1','PW160126.1','PW160127.1','PW160128.1','PW160129.1',...
@@ -30,9 +30,9 @@ figure_dir = 'C:\Users\seth.koenig\Documents\MATLAB\Sequence Task_RelationalMemo
 %                'PW160212.2','PW160216.2','PW160217.2','PW160218.2','PW160219.2'};
 % item_sets =   {'SeqL21.itm','SeqL22.itm','SeqL23.itm','SeqL24.itm','SeqL25.itm',...
 %                'SeqL26.itm','SeqL27.itm','SeqL30.itm','SeqL31.itm','SeqL32.itm',...
-%                'SeqL34.itm','Seql35.itm','SeqL36.itm','Seql37.itm','SeqL38.itm'};
-%min_rt = 156;%mininum reaction time varies by monkey. Taken as 5 percentile for random sequences
-
+%              'SeqL34.itm','Seql35.itm','SeqL36.itm','Seql37.itm','SeqL38.itm'};
+min_rt = 156;%mininum reaction time varies by monkey. Taken as 5 percentile for random sequences
+% 
 % pre_sets = {'PW150324.2','PW150325.2','PW150326.2','PW150327.2','PW150330.2',...
 %               'PW150331.2','PW150401.2','PW150402.2','PW150403.2','PW150406.2',...
 %               'PW150407.2','PW150409.2','PW150413.2','PW150414.2','PW150415.2'};
@@ -65,26 +65,26 @@ figure_dir = 'C:\Users\seth.koenig\Documents\MATLAB\Sequence Task_RelationalMemo
 %               'SeqL34.itm','SeqL35.itm','SeqL36.itm','SeqL38.itm','SeqL39.itm'};
 
 %RR post-lesion
-cch25_files = {'RR160210.2','RR160211.2','RR160212.2','RR160217.2','RR160218.2',...
-              'RR160219.2','RR160222.2','RR160223.2','RR160224.2','RR160225.2',...
-              'RR160226.2','RR160229.2','RR160301.2','RR160302.2','RR160303.2'};
-SeqL_files = {'RR160210.1','RR160211.1','RR160212.1','RR160217.1','RR160218.1',...
-              'RR160219.1','RR160222.1','RR160223.1','RR160224.1','RR160225.1',...
-              'RR160226.1','RR160229.1','RR160301.1','RR160302.1','RR160303.1'};
-item_sets =  { 'SeqL06.itm','SeqL08.itm','SeqL07.itm','SeqL09.itm','SeqL10.itm',...
-              'SeqL11.itm','SeqL12.itm','SeqL13.itm','SeqL14.itm','SeqL15.itm',...
-              'SeqL16.itm','SeqL17.itm','SeqL18.itm','SeqL19.itm','SeqL20.itm'};
-            %also have SeqL40.itm RR160304.1. Collected Just In case
-min_rt = 109; 
+% cch25_files = {'RR160210.2','RR160211.2','RR160212.2','RR160217.2','RR160218.2',...
+%               'RR160219.2','RR160222.2','RR160223.2','RR160224.2','RR160225.2',...
+%               'RR160226.2','RR160229.2','RR160301.2','RR160302.2','RR160303.2'};
+% SeqL_files = {'RR160210.1','RR160211.1','RR160212.1','RR160217.1','RR160218.1',...
+%               'RR160219.1','RR160222.1','RR160223.1','RR160224.1','RR160225.1',...
+%               'RR160226.1','RR160229.1','RR160301.1','RR160302.1','RR160303.1'};
+% item_sets =  { 'SeqL06.itm','SeqL08.itm','SeqL07.itm','SeqL09.itm','SeqL10.itm',...
+%               'SeqL11.itm','SeqL12.itm','SeqL13.itm','SeqL14.itm','SeqL15.itm',...
+%               'SeqL16.itm','SeqL17.itm','SeqL18.itm','SeqL19.itm','SeqL20.itm'};
+%            also have SeqL40.itm RR160304.1. Collected Just In case
+% min_rt = 109; 
 
-pre_sets = {'RR150324.2','RR150325.2','RR150326.2','RR150327.2','RR150330.2',...
-              'RR150331.2','RR150401.2','RR150408.2','RR150409.2','RR150410.2',...
-              'RR150413.2','RR150414.2','RR150415.2','RR150417.2','RR150422.2'};
-post_sets = {'RR160210.1','RR160211.1','RR160212.1','RR160217.1','RR160218.1',...
-              'RR160219.1','RR160222.1','RR160223.1','RR160224.1','RR160225.1',...
-              'RR160226.1','RR160229.1','RR160301.1','RR160302.1','RR160303.1'};
+% pre_sets = {'RR150324.2','RR150325.2','RR150326.2','RR150327.2','RR150330.2',...
+%               'RR150331.2','RR150401.2','RR150408.2','RR150409.2','RR150410.2',...
+%               'RR150413.2','RR150414.2','RR150415.2','RR150417.2','RR150422.2'};
+% post_sets = {'RR160210.1','RR160211.1','RR160212.1','RR160217.1','RR160218.1',...
+%               'RR160219.1','RR160222.1','RR160223.1','RR160224.1','RR160225.1',...
+%               'RR160226.1','RR160229.1','RR160301.1','RR160302.1','RR160303.1'};
 
-%TO 
+%TO pre-lesion
 % cch25_files = {'TO150421.1','TO150422.2','TO150423.1','TO150424.1','TO150427.2',...
 %                'TO150428.1','TO150429.1','TO150430.1','TO150501.1','TO150504.1',...
 %                'TO150505.1','TO150506.1','TO150507.1','TO150508.1','TO150512.1'};
@@ -94,47 +94,85 @@ post_sets = {'RR160210.1','RR160211.1','RR160212.1','RR160217.1','RR160218.1',..
 % item_sets = {'SeqL22.itm','SeqL23.itm','SeqL24.itm','SeqL25.itm','SeqL26.itm',...
 %              'SeqL27.itm','SeqL28.itm','SeqL29.itm','SeqL30.itm','SeqL31.itm',...
 %              'SeqL32.itm','SeqL33.itm','SeqL34.itm','SeqL35.itm','SeqL37.itm'}; 
+
+%TO post-lesion
+%  cch25_files = {'TO170228.1','TO170301.1','TO170306.1','TO170307.1','TO170308.1',...
+%                 'TO170309.1','TO170310.1','TO170313.1','TO170314.1','TO170315.1',...
+%                 'TO170316.1','TO170317.1','TO170320.1','TO170321.1','TO170322.1'};
+%  
+% SeqL_files = {'TO170228.2','TO170301.2','TO170306.2','TO170307.2','TO170308.2',...
+%               'TO170309.2','TO170310.2','TO170313.2','TO170314.2','TO170315.2',...
+%               'TO170316.2','TO170317.2','TO170320.2','TO170321.2','TO170322.2'};
+% 
+% 
+% item_sets = {'SeqL01.itm','SeqL02.itm','SeqL03.itm','SeqL04.itm','SeqL05.itm',...
+%              'SeqL06.itm','SeqL07.itm','SeqL08.itm','SeqL09.itm','SeqL10.itm',...
+%              'SeqL11.itm','SeqL12.itm','SeqL13.itm','SeqL14.itm','SeqL15.itm'};
 % min_rt = 135;
+% 
+
+%MF pre-lesion
+% cch25_files ={'MF161209.1','MF161212.1','MF161213.1','MF161214.1',...
+%               'MF161215.1','MF161219.1','MF161220.1','MF161221.1',...
+%               'MF161229.1','MF161230.1','MF170103.1','MF170104.2',...
+%               'MF170105.1','MF170106.1','MF170109.1','MF170110.1'};
+% SeqL_files = {'MF161209.2','MF161212.2','MF161213.2','MF161214.2',...
+%               'MF161215.2','MF161219.2','MF161220.2','MF161221.2',...
+%               'MF161229.2','MF161230.2','MF170103.2','MF170104.3',...
+%               'MF170105.2','MF170106.2','MF170109.2','MF170110.2'};
+% item_sets = {'SeqL02.itm','SeqL03.itm','SeqL04.itm','SeqL05.itm',...
+%              'SeqL06.itm','SeqL08.itm','SeqL09.itm','SeqL10.itm',...
+%              'SeqL11.itm','SeqL12.itm','SeqL13.itm','SeqL14.itm',...
+%              'SeqL15.itm','SeqL16.itm','SeqL17.itm','SeqL18.itm'}; 
+%should skip set SeqL01.itm since had calibration issue half way through
+%and looks like creates weird RTs, and skip SeqL07.itm since restarted
+%after a few trials
+% min_rt = 112;
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%---Preprocess all the SeqL data---%%%
-% for ls =8%:length(SeqL_files)
+% for ls =length(SeqL_files) %7,9,12-15
 %     ImportSeqLData(cch25_files{ls},SeqL_files{ls},item_sets{ls})
 %     close all
 % end
 %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%---Autmoatically analyze Reaction times in Sequence Task---%%%
-% for ls = 1:length(SeqL_files)
-%     DetermineSeqLTime2Fixation([datadir SeqL_files{ls}(1:8) '_'  SeqL_files{ls}(end) '-fixation.mat'])
-% end
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%---Autmoatically Plot Eye Position Density---%%%
-% for ls = 1:length(SeqL_files)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%---Autmoatically analyze Reaction times in Sequence Task---%%%
+for ls = 1:length(SeqL_files)
+    DetermineSeqLTime2Fixation([datadir SeqL_files{ls}(1:8) '_'  SeqL_files{ls}(end) '-fixation.mat'])
+end
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%---Autmoatically Plot Eye Position Density---%%%
+% for ls = length(SeqL_files)
 %     PlotEyeDensity([datadir SeqL_files{ls}(1:8) '_'  SeqL_files{ls}(end) '-fixation.mat'],figure_dir)
 % end
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%---Autmoatically analyze Fixation Durations in List task---%%%
-% for ls = 1:length(SeqL_files)
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%---Autmoatically analyze Fixation Durations in List task---%%%
+% for ls = length(SeqL_files)
 %     DetermineSeqLFixationDurations([datadir SeqL_files{ls}(1:8) '_'  SeqL_files{ls}(end) '-fixation.mat'])
 % end
-
+% 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% %%---Automatically analyze KL Divergence Data for List task---%%%
+% %%---Automatically analyze KL Divergencitem_sets{ls}e Data for List task---%%%
 % for ls = 1:length(SeqL_files)
 %    DetermineSeqLKLdiverence([datadir SeqL_files{ls}(1:8) '_'  SeqL_files{ls}(end) '-fixation.mat']);
 % end
 %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%---Plot mean reaction time across sessions---%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%---Plot mean reaction time across sessions---%%%
 block_prop = NaN(length(SeqL_files),21);
 sess_means = NaN(1,length(SeqL_files)); 
 all_rts = [];
 n_trials = [];
 bad_trials = []; 
 mean_rt_diff = [];
+mean_rt = [];
 rt_diff = [];
 cortex_break = [];
 means = NaN(1,4);
@@ -146,6 +184,7 @@ for ls =1:length(SeqL_files)
     [~,~,sequence_locations] = read_SeqL_itm_and_cnd_files(item_sets{ls},SeqL_files{ls}(1:2)); %load item and condition files
     overlap = find(sum(sequence_locations{1} == sequence_locations{2}) == 2);
 
+    mean_rt = [mean_rt; nanmean(reaction_time)];
     rt_diff = [rt_diff; reaction_time-cortex_rt];
     mean_rt_diff(ls) = nanmean(nanmean(reaction_time-cortex_rt));
     [~,~,sequence_locations] = read_SeqL_itm_and_cnd_files(item_sets{ls},SeqL_files{ls}(1:2)); %load item and condition files
@@ -432,26 +471,26 @@ ylabel('Saccade Amplitude (ms)')
 legend('Novel','Repeat')
 
 
-% nn_90 = [];
-% nn_80 = [];
-% nr_90 = [];
-% nr_80 = [];
-% p = [];
-% for f = 1:20;
-%     nn_80(f) = sampsizepwr('t',[mean(means{1}(:,f)) std(means{1}(:,f))], mean(means{2}(:,f)),0.8);
-%     nn_90(f) = sampsizepwr('t',[mean(means{1}(:,f)) std(means{1}(:,f))], mean(means{2}(:,f)),0.9);
-%     nr_80(f) = sampsizepwr('t',[mean(means{2}(:,f)) std(means{2}(:,f))], mean(means{1}(:,f)),0.8);
-%     nr_90(f) = sampsizepwr('t',[mean(means{2}(:,f)) std(means{2}(:,f))], mean(means{1}(:,f)),0.9);
-%    [~,p(f)] = ttest2( means{1}(:,f),means{2}(:,f));
-% end
-% 
-% figure
-% hold on
-% errorbar(nanmean(sac_means{1}),nanstd(sac_means{1})./sqrt(sum(~isnan(sac_means{1}))),'b')
-% errorbar(nanmean(sac_means{2}),nanstd(sac_means{2})./sqrt(sum(~isnan(sac_means{2}))),'r')
-% xlabel('Ordinal Sacccade #')
-% ylabel('Saccade Amplitude (dva)')
-% legend('Novel','Repeat')
+nn_90 = [];
+nn_80 = [];
+nr_90 = [];
+nr_80 = [];
+p = [];
+for f = 1:20;
+    nn_80(f) = sampsizepwr('t',[mean(means{1}(:,f)) std(means{1}(:,f))], mean(means{2}(:,f)),0.8);
+    nn_90(f) = sampsizepwr('t',[mean(means{1}(:,f)) std(means{1}(:,f))], mean(means{2}(:,f)),0.9);
+    nr_80(f) = sampsizepwr('t',[mean(means{2}(:,f)) std(means{2}(:,f))], mean(means{1}(:,f)),0.8);
+    nr_90(f) = sampsizepwr('t',[mean(means{2}(:,f)) std(means{2}(:,f))], mean(means{1}(:,f)),0.9);
+   [~,p(f)] = ttest2( means{1}(:,f),means{2}(:,f));
+end
+
+figure
+hold on
+errorbar(nanmean(sac_means{1}),nanstd(sac_means{1})./sqrt(sum(~isnan(sac_means{1}))),'b')
+errorbar(nanmean(sac_means{2}),nanstd(sac_means{2})./sqrt(sum(~isnan(sac_means{2}))),'r')
+xlabel('Ordinal Sacccade #')
+ylabel('Saccade Amplitude (dva)')
+legend('Novel','Repeat')
 %% Plot KL divergence 
 % 
 % KLnorm_mean = NaN(length(SeqL_files),5);
@@ -506,40 +545,76 @@ for ls =1:length(post_sets)
     sess_50{2}(ls,:) = 100*sum(reaction_time(21:end,:) < 50)./sum(~isnan(reaction_time(21:end,:))); 
 end
 
-numps = [size(sess_means{1},1)*ones(1,4); size(sess_means{2},1)*ones(1,4)]';
+sess_minrt{1} = [sess_minrt{1} mean(sess_minrt{1}(:,2:4),2)];
+sess_minrt{2} = [sess_minrt{2} mean(sess_minrt{2}(:,2:4),2)];
+sess_means{1} = [sess_means{1} mean(sess_means{1}(:,2:4),2)];
+sess_means{2} = [sess_means{2} mean(sess_means{2}(:,2:4),2)];
+sess_50{1} = [sess_50{1} mean(sess_50{1}(:,2:4),2)];
+sess_50{2} = [sess_50{2} mean(sess_50{2}(:,2:4),2)];
+
+numps = [size(sess_means{1},1)*ones(1,5); size(sess_means{2},1)*ones(1,5)]';
 
 figure
-subplot(1,3,1)
+subplot(2,2,1)
 hold on
 bar([mean(sess_means{1});mean(sess_means{2})]')
 errorb([mean(sess_means{1});mean(sess_means{2})]',[std(sess_means{1});std(sess_means{2})]'...
      ./numps);
+ for g = 1:5
+     [~,p] = ttest2(sess_means{1}(:,g),sess_means{2}(:,g));
+     if p < 0.05
+         plot(g,mean(sess_means{1}(:,g))+25,'k*');
+     end
+ end
+ 
+hold off
 yl = ylim;
 ylim([125 yl(2)]);
-xlim([0.5 4.5])
+set(gca,'Xtick',1:5)
+set(gca,'XtickLabel',{'1','2','3','4','2-4'})
+xlim([0.5 5.5])
 xlabel('Item #')
 ylabel('Reaction time (ms)')
 
-subplot(1,3,2)
+subplot(2,2,2)
 hold on
 bar([mean(sess_minrt{1});mean(sess_minrt{2})]')
 errorb([mean(sess_minrt{1});mean(sess_minrt{2})]',[std(sess_minrt{1});std(sess_minrt{2})]'...
-     ./numps);
+    ./numps);
+for g = 1:5
+    [~,p] = ttest2(sess_minrt{1}(:,g),sess_minrt{2}(:,g));
+    if p < 0.05
+        plot(g,mean(sess_minrt{1}(:,g))+5,'k*');
+    end
+end
+hold off
 yl = ylim;
-xlim([0.5 4.5])
+xlim([0.5 5.5])
+set(gca,'Xtick',1:5)
+set(gca,'XtickLabel',{'1','2','3','4','2-4'})
 xlabel('Item #')
 ylabel('% of RTs < Min RT')
 
-subplot(1,3,3)
+subplot(2,2,3)
 hold on
 bar([mean(sess_50{1});mean(sess_50{2})]')
 errorb([mean(sess_50{1});mean(sess_50{2})]',[std(sess_50{1});std(sess_50{2})]'...
      ./numps);
+ for g = 1:5
+    [~,p] = ttest2(sess_50{1}(:,g),sess_50{2}(:,g));
+    if p < 0.05
+        plot(g,mean(sess_50{1}(:,g))+2,'k*');
+    end
+end
+hold off
 yl = ylim;
-xlim([0.5 4.5])
+xlim([0.5 5.5])
+set(gca,'Xtick',1:5)
+set(gca,'XtickLabel',{'1','2','3','4','2-4'})
 xlabel('Item #')
 ylabel('% of RTs < 50')
 legend('Pre-Lesion','Post-Lesion','Location','NorthEastOutside')
+
 
 subtitle(['Monkey: ' pre_sets{1}(1:2)])
 
@@ -624,5 +699,5 @@ errorbar(nanmean(sac_means{1,2}),nanstd(sac_means{1,2})./sqrt(sum(~isnan(sac_mea
 errorbar(nanmean(sac_means{2,1}),nanstd(sac_means{2,1})./sqrt(sum(~isnan(sac_means{2,1}))),'k')
 errorbar(nanmean(sac_means{2,2}),nanstd(sac_means{2,2})./sqrt(sum(~isnan(sac_means{2,2}))),'g')
 xlabel('Ordinal Fixation #')
-ylabel('Fixation Duration (ms)')
+ylabel('Saccade Amplitude (dva)')
 legend('Novel Pre','Repeat Pre','Novel Post','Repeat Post')

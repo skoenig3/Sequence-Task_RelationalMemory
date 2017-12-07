@@ -126,7 +126,11 @@ clear cnd
 numrpt = size(per,2);
 cnd = zeros(1,numrpt);
 for rptlop = 1:numrpt
-    cnd(rptlop)=per(rptlop).cnd;
+    if length(per(rptlop).cnd) == 1 
+        cnd(rptlop)=per(rptlop).cnd;
+    else
+         cnd(rptlop)=per(rptlop).cnd(2); %random cortex bug 
+    end
 end
 
 % Create structures x and y of the corresponding average eye data for each trial
