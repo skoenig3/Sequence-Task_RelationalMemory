@@ -22,20 +22,20 @@ imageX = 800;
 imageY = 600;
 
 if strcmpi(clrchng_cortexfile(1:2),'PW')
-    clrchng_cortexfile = ['\\towerexablox.wanprc.org\Buffalo\Cortex Data\Vivian\' clrchng_cortexfile];
+    clrchng_cortexfile = ['Z:\Cortex Data\Vivian\' clrchng_cortexfile];
 elseif strcmpi(clrchng_cortexfile(1:2),'TT')
-    clrchng_cortexfile = ['\\towerexablox.wanprc.org\Buffalo\Cortex Data\Timmy\' clrchng_cortexfile];
+    clrchng_cortexfile = ['Z:\Cortex Data\Timmy\' clrchng_cortexfile];
 elseif strcmpi(clrchng_cortexfile(1:2),'RR')
-    clrchng_cortexfile = ['\\towerexablox.wanprc.org\Buffalo\Cortex Data\Red\' clrchng_cortexfile];
+    clrchng_cortexfile = ['Z:\Cortex Data\Red\' clrchng_cortexfile];
 elseif strcmpi(clrchng_cortexfile(1:2),'TO')
-    clrchng_cortexfile = ['\\towerexablox.wanprc.org\Buffalo\Cortex Data\Tobii\' clrchng_cortexfile];
+    clrchng_cortexfile = ['Z:\Cortex Data\Tobii\' clrchng_cortexfile];
 elseif strcmpi(clrchng_cortexfile(1:2),'MF')
-    clrchng_cortexfile = ['\\towerexablox.wanprc.org\Buffalo\Cortex Data\Manfred\' clrchng_cortexfile];
+    clrchng_cortexfile = ['Z:\Cortex Data\Manfred\' clrchng_cortexfile];
 end
 
 %%----Color Change Calibration----%%
-ITMFile = '\\towerexablox.wanprc.org\Buffalo\eblab\Cortex Programs\ClrChng\cch25.itm';
-CNDFile = '\\towerexablox.wanprc.org\Buffalo\eblab\Cortex Programs\ClrChng\cch25.cnd';
+ITMFile = 'Z:\eblab\Cortex Programs\ClrChng\cch25.itm';
+CNDFile = 'Z:\eblab\Cortex Programs\ClrChng\cch25.cnd';
 % this is different becasue the spacing is different and I don't have
 % a new item file on the network for the new spacing
 ind_spacex = [-6,-3,0,3,6]; %whats on the network
@@ -226,15 +226,15 @@ ylim([-12.5 12.5])
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %---Import LastSQ Task---%
 if strcmpi(ListSQ_cortexfile(1:2),'PW')
-    cortexfile = ['\\towerexablox.wanprc.org\Buffalo\Cortex Data\Vivian\' ListSQ_cortexfile];
+    cortexfile = ['Z:\Cortex Data\Vivian\' ListSQ_cortexfile];
 elseif strcmpi(ListSQ_cortexfile(1:2),'TT')
-    cortexfile = ['\\towerexablox.wanprc.org\Buffalo\Cortex Data\Timmy\' ListSQ_cortexfile];
+    cortexfile = ['Z:\Cortex Data\Timmy\' ListSQ_cortexfile];
 elseif strcmpi(ListSQ_cortexfile(1:2),'RR')
-    cortexfile = ['\\towerexablox.wanprc.org\Buffalo\Cortex Data\Red\' ListSQ_cortexfile];
+    cortexfile = ['Z:\Cortex Data\Red\' ListSQ_cortexfile];
 elseif strcmpi(ListSQ_cortexfile(1:2),'TO')
-    cortexfile = ['\\towerexablox.wanprc.org\Buffalo\Cortex Data\Tobii\' ListSQ_cortexfile];
+    cortexfile = ['Z:\Cortex Data\Tobii\' ListSQ_cortexfile];
 elseif strcmpi(ListSQ_cortexfile(1:2),'MF')
-    cortexfile = ['\\towerexablox.wanprc.org\Buffalo\Cortex Data\Manfred\' ListSQ_cortexfile];
+    cortexfile = ['Z:\Cortex Data\Manfred\' ListSQ_cortexfile];
 end
 
 [time_arr,event_arr,eog_arr,epp_arr,~,~]  = get_ALLdata(cortexfile);
